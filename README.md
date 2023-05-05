@@ -5,8 +5,9 @@
 ## Bài Tập Giữa Phần:
 Phát triển Ứng dụng Quản lý Ấn phẩm
 Yêu cầu: 
-- Ít nhất có 2 loại sách, báo; 
-- Thống kê ấn phẩm; Tìm kiếm ít nhất theo 2 tiêu chí
+- Nhập thông tin thu; Nhập thông tin chi; Cảnh báo chi quá thu
+- Thống kê theo tháng, theo tuần, theo ngày; Sắp xếp
+
 ## Mô tả ứng dụng
 ### 1. Tên ứng dụng:
 Ứng dụng quản lý thu chi
