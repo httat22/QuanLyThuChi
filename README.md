@@ -3,8 +3,7 @@
 Ứng dụng giúp bạn quản lý thu chi của bạn và dữ liệu được lưu trữ trong file xml.
 
 ## Bài Tập Giữa Phần:
-Phát triển Ứng dụng Quản lý thu chi
-Yêu cầu: 
+Phát triển Ứng dụng Quản lý thu chi, yêu cầu: 
 - Nhập thông tin thu; Nhập thông tin chi; Cảnh báo chi quá thu
 - Thống kê theo tháng, theo tuần, theo ngày; Sắp xếp
 
