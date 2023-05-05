@@ -25,10 +25,10 @@ Yêu cầu:
 - Làm mới: đưa các trường ở mục Income Management và Expense Management hiển thị thị về mặc định
 
 ### 4. Hướng dẫn sử dụng:
-##### a. Tại màn hình Đăng nhập:
+#### a. Tại màn hình Đăng nhập:
 Người dùng phải đăng nhập đúng tài khoản đã cung cấp để sử dụng
 
-##### b. Tại màn hình chính của ứng dụng:
+#### b. Tại màn hình chính của ứng dụng:
 Tại mục Income Management và Expense Management:
 + Người dùng nhập, sửa, xóa các thông tin của khoản thu (chi) theo các trường ID, Date, Note, Income (Expense), Category.
 + Để thao tác thêm / xóa / sửa được thực hiện thì người dùng phải click chuột vào các button tương ứng ADD, EDIT, DELETE, CLEAR tương ứng tùy theo mục đích.
