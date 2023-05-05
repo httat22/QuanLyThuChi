@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<incomeList>
+    <income>
+        <id>2</id>
+        <date>26/03/2023</date>
+        <note>Lương tháng 3</note>
+        <income>2000000</income>
+        <category>Tiền lương</category>
+    </income>
+    <income>
+        <id>1</id>
+        <date>26/04/2023</date>
+        <note>Lương tháng 4</note>
+        <income>1000000</income>
+        <category>Tiền lương</category>
+    </income>
+    <income>
+        <id>3</id>
+        <date>26/05/2023</date>
+        <note>Lương tháng 5</note>
+        <income>500000</income>
+        <category>Tiền lương</category>
+    </income>
+    <income>
+        <id>4</id>
+        <date>26/04/2023</date>
+        <note>Phụ cấp tháng 4</note>
+        <income>100000</income>
+        <category>Tiền phụ cấp</category>
+    </income>
+    <income>
+        <id>5</id>
+        <date>03/05/0002</date>
+        <note></note>
+        <income>100000</income>
+        <category>Tiền thưởng</category>
+    </income>
+</incomeList>
