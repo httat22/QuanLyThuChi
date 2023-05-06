@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <expandList>
     <expand>
-        <id>4</id>
-        <date>28/04/2023</date>
-        <note>Lương thực</note>
-        <expand>100000</expand>
-        <category>Nhu yếu phẩm</category>
+        <id>1</id>
+        <date>26/04/2023</date>
+        <note>Ăn sáng</note>
+        <expand>20000</expand>
+        <category>Ăn uống</category>
     </expand>
     <expand>
         <id>2</id>
@@ -15,20 +15,6 @@
         <category>Quần áo</category>
     </expand>
     <expand>
-        <id>5</id>
-        <date>28/04/2023</date>
-        <note>Quần áo</note>
-        <expand>100000</expand>
-        <category>Quần áo</category>
-    </expand>
-    <expand>
-        <id>1</id>
-        <date>26/04/2023</date>
-        <note>Ăn sáng</note>
-        <expand>20000</expand>
-        <category>Ăn uống</category>
-    </expand>
-    <expand>
         <id>3</id>
         <date>26/04/2023</date>
         <note>Ăn tối</note>
@@ -36,10 +22,31 @@
         <category>Ăn uống</category>
     </expand>
     <expand>
+        <id>4</id>
+        <date>28/04/2023</date>
+        <note>Lương thực</note>
+        <expand>100000</expand>
+        <category>Nhu yếu phẩm</category>
+    </expand>
+    <expand>
+        <id>5</id>
+        <date>28/04/2023</date>
+        <note>Quần áo</note>
+        <expand>100000</expand>
+        <category>Quần áo</category>
+    </expand>
+    <expand>
         <id>6</id>
         <date>28/04/2023</date>
         <note>Thuốc</note>
         <expand>10000</expand>
         <category>Y tế</category>
+    </expand>
+    <expand>
+        <id>7</id>
+        <date>06/05/2023</date>
+        <note></note>
+        <expand>299999</expand>
+        <category>Nhu yếu phẩm</category>
     </expand>
 </expandList>

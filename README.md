@@ -4,9 +4,9 @@
 Ứng dụng giúp bạn quản lý thu chi của bạn và dữ liệu được lưu trữ trong file xml.
 
 ## Bài Tập Giữa Phần:
-Phát triển Ứng dụng Quản lý thu chi, yêu cầu: 
+Phát triển ứng dụng Quản lý thu chi, yêu cầu: 
 - Nhập thông tin thu; Nhập thông tin chi; Cảnh báo chi quá thu
-- Thống kê theo tháng, theo tuần, theo ngày; Sắp xếp
+- Thống kê theo tháng, theo tuần, theo ngày; Sắp xếp; Tìm kiếm
 
 ## Mô tả ứng dụng
 ### 1. Tên ứng dụng:
@@ -23,7 +23,8 @@ Phát triển Ứng dụng Quản lý thu chi, yêu cầu:
     + Trường category: hiển thị một JComboBox để người dùng lựa chọn danh mục phân loại khoản thu (chi). 
 - Sắp xếp theo các tiêu chí( Date, Price, Category, ID ).
 - Tính tổng thu nhập theo ngày, tháng, năm, tất cả: người dùng cần lựa chọn thời gian muốn thông kê ở trường "Select statistics date" bằng cách nhấn vào icon, sau đó lựa chọn hình thức thống kê gồm: Day, Month, Year, All. Nếu khoản chi lớn hơn khoản thu thì sẽ đưa ra một thông báo cảnh báo với người dùng. 
-- Làm mới: đưa các trường ở mục Income Management và Expense Management hiển thị thị về mặc định
+- Tìm kiếm thông tin thu chi dựa theo ngày mà người dùng chọn.
+- Làm mới: đưa các trường ở mục Income Management và Expense Management hiển thị thị về mặc định.
 
 ### 4. Hướng dẫn sử dụng:
 #### a. Tại màn hình Đăng nhập:
@@ -36,5 +37,6 @@ Tại mục Income Management và Expense Management:
 + Trong 2 table, người dụng có thể click chuột vào hàng chứa thông tin của khoản chi để thông tin của khoản chi đấy được lấy và hiển trị theo các trường trong mục Income Management và Expense Management. Tại 2 mục này, người dùng lại có thể thực hiện các thao tác với các khoản thu (chi).
 
 Tại mục Statistics:
-+ Để thực hiện tính năng thống kê, người dùng cần lựa chọn thời gian sau đó lựa chọn kiểu thống kê theo "Day", "Month", "Year", "All". Tổng khoản thu và khoản chi sẽ được hiển thị ở trường "Total income", "Total Expenses", nếu khoản chi lớn hơn khoản thu thì sẽ có thông báo cảnh báo người dùng.
++ Để thực hiện tính năng thống kê, người dùng cần lựa chọn thời gian tại trường "Select statistics date" sau đó lựa chọn kiểu thống kê theo "Day", "Month", "Year", "All". Tổng khoản thu và khoản chi sẽ được hiển thị ở trường "Total income", "Total Expenses", nếu khoản chi lớn hơn khoản thu thì sẽ có thông báo cảnh báo người dùng.
 + Để sắp xếp danh sách ấn phẩm, mặc định thứ tự được sắp xếp theo ID, người dùng có thể lựa chọn những các sắp xếp khác bằng cách click vào các button "Sort by date", "Sort by money", "Sort by category", "Sort by ID".
++ Để thực hiện tính năng tìm kiếm theo ngày, người dùng cần lựa chọn thời gian tại trường "Select statistics date" sau đó click vào button "Search By Date" để tìm kiếm.

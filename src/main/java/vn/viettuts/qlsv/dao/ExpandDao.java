@@ -137,6 +137,18 @@ public class ExpandDao {
         });
     }
 
+    public List<ExpandModel> searchByDate(Date date) {
+        List<ExpandModel> list = new ArrayList<>();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        String dateString = dateFormat.format(date);
+        for (ExpandModel i : expandList) {
+            if (i.getDate().equals(dateString)) {
+                list.add(i);
+            }
+        }
+        return list;
+    }
+
     public long totalExpandAll() {
         int total = 0;
         for (ExpandModel e : expandList) {

@@ -2,7 +2,6 @@ package vn.viettuts.qlsv.view;
 
 import javax.swing.JFrame;
 
-import java.awt.Button;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
@@ -15,7 +14,6 @@ import java.util.Date;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -92,7 +90,7 @@ public class AppView extends JFrame implements ActionListener, ListSelectionList
     private JButton sortCategoryBtn;
     private JButton sortIDBtn;
     private JLabel statisticsTitle;
-    private Button search;
+    private JButton searchBtn;
  
     public AppView() {
         initComponents();
@@ -356,6 +354,7 @@ public class AppView extends JFrame implements ActionListener, ListSelectionList
         sortMoneyBtn = new JButton("Sort by money");
         sortCategoryBtn = new JButton("Sort by category");
         sortIDBtn = new JButton("Sort by ID");
+        searchBtn = new JButton("Search By Date");
 
         statisticsTitle = new JLabel("STATISTICS");
         statisticsTitle.setForeground(Color.RED);
@@ -387,6 +386,7 @@ public class AppView extends JFrame implements ActionListener, ListSelectionList
         panelStatistics.add(sortMoneyBtn);
         panelStatistics.add(sortCategoryBtn);
         panelStatistics.add(sortIDBtn);
+        panelStatistics.add(searchBtn);
 
         panelStatistics.add(statisticsTitle);
         panelStatistics.add(chooseDateLabel);
@@ -431,6 +431,9 @@ public class AppView extends JFrame implements ActionListener, ListSelectionList
         layout.putConstraint(SpringLayout.NORTH, sortCategoryBtn, 130, SpringLayout.NORTH, panelStatistics);
         layout.putConstraint(SpringLayout.WEST, sortIDBtn, 150, SpringLayout.WEST, sortCategoryBtn);
         layout.putConstraint(SpringLayout.NORTH, sortIDBtn, 130, SpringLayout.NORTH, panelStatistics);
+
+        layout.putConstraint(SpringLayout.WEST, searchBtn, 10, SpringLayout.WEST, panelStatistics);
+        layout.putConstraint(SpringLayout.NORTH, searchBtn, 170, SpringLayout.NORTH, panelStatistics);
     }
     
     /**
@@ -828,5 +831,8 @@ public class AppView extends JFrame implements ActionListener, ListSelectionList
     }
     public void addYearStatisticsListener(ActionListener listener) {
         yearBtn.addActionListener(listener);
+    }
+    public void addSearchListener(ActionListener listener) {
+        searchBtn.addActionListener(listener);
     }
 }

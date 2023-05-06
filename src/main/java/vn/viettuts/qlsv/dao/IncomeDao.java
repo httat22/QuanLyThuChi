@@ -108,10 +108,6 @@ public class IncomeDao {
         });
     }
 
-    public void searchIncomeByID() {
-        
-    }
-
     public void sortIncomeByID() {
         Collections.sort(incomeList, new Comparator<IncomeModel>() {
             public int compare(IncomeModel incomeModel1, IncomeModel incomeModel2) {
@@ -140,6 +136,18 @@ public class IncomeDao {
                 return income1.compareTo(income2);
             }
         });
+    }
+
+    public List<IncomeModel> searchByDate(Date date) {
+        List<IncomeModel> list = new ArrayList<>();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        String dateString = dateFormat.format(date);
+        for (IncomeModel i : incomeList) {
+            if (i.getDate().equals(dateString)) {
+                list.add(i);
+            }
+        }
+        return list;
     }
 
     public long totalIncomeAll() {

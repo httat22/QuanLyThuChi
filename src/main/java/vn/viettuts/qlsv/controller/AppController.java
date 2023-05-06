@@ -2,6 +2,7 @@ package vn.viettuts.qlsv.controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -13,11 +14,13 @@ import vn.viettuts.qlsv.dao.IncomeDao;
 import vn.viettuts.qlsv.model.ExpandModel;
 import vn.viettuts.qlsv.model.IncomeModel;
 import vn.viettuts.qlsv.view.AppView;
+import vn.viettuts.qlsv.view.SearchView;
 
 public class AppController {
     private AppView appView;
     private IncomeDao incomeDao;
     private ExpandDao expandDao;
+    private SearchView searchView;
 
     public AppController(AppView view) {
         this.appView = view;
@@ -46,6 +49,7 @@ public class AppController {
         view.addDayStatisticsListener(new DayStatisticsListener());
         view.addMonthStatisticsListener(new MonthStatisticsListener());
         view.addYearStatisticsListener(new YearStatisticsListener());
+        view.addSearchListener(new SearchListener());
     
     }
 
@@ -229,6 +233,21 @@ public class AppController {
             long totalIncome = incomeDao.totalIncomeYear(date);
             long totalExpand = expandDao.totalExpandYear(date);
             appView.printIncomeAndExpand(totalIncome, totalExpand);
+        }
+    }
+
+    class SearchListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            Date date = appView.getDateForStatistics();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+            String dateString = dateFormat.format(date);
+            System.out.println(dateString);
+            List<IncomeModel> listIncomeModels = incomeDao.searchByDate(date);
+            List<ExpandModel> listExpandModels = expandDao.searchByDate(date);
+            SearchView searchView = new SearchView();
+            searchView.setVisible(true);
+            searchView.showListIncome(listIncomeModels);
+            searchView.showListExpand(listExpandModels);  
         }
     }
 }
