@@ -1,4 +1,5 @@
 # Ứng dụng quản lý thu chi
+(https://github.com/httat22/QuanLyThuChi.git)
 
 Ứng dụng giúp bạn quản lý thu chi của bạn và dữ liệu được lưu trữ trong file xml.
 
