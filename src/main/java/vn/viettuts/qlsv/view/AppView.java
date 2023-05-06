@@ -1,5 +1,7 @@
 package vn.viettuts.qlsv.view;
 
+import javax.swing.JFrame;
+
 import java.awt.Button;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -113,6 +115,7 @@ public class AppView extends JFrame implements ActionListener, ListSelectionList
         this.setSize(800, 700);
         this.setLocationRelativeTo(null);
         this.setVisible(false);
+        this.setResizable(false);
     }
 
     public void showMessage(String message) {
